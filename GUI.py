@@ -1,8 +1,8 @@
-import os
+import subprocess
 
 cmd = "g++ dataStructures\\RedBlackTree.cpp -o RedBlackTree.exe"
-os.system(cmd)
+subprocess.run(cmd)
 print
-os.system('RedBlackTree.exe')
+subprocess.run('RedBlackTree.exe')
 print
 

@@ -439,9 +439,7 @@ public:
     {
         //printTree("", root, false);
         generateDot();
-        string filename = "dataStructures\\dot.py";
-        string command = "python ";
-        command += filename;
+        string command = "python dataStructures\\dot.py rbtree.dot";
         system(command.c_str());
     }
 
