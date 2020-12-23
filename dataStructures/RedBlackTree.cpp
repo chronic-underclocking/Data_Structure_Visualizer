@@ -485,6 +485,7 @@ int main(int argc,char* argv[])
             default:
                 break;
         }
+	system("cls");
     }
     while(choice != 4);
 
