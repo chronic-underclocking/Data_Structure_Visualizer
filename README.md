@@ -1,5 +1,4 @@
 # Data Structure Visualizer
- A data structures visualization program.
 
 The data structures are implemented in C++, with a Python wrapper as GUI and Visualizer.
 
