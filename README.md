@@ -15,7 +15,7 @@ Currently, only the red black tree has been implemented.
   
   * GraphViz library for python is required, install it using:
   
-      pip install graphviz
+        pip install graphviz
   
  
  
