@@ -463,7 +463,7 @@ int main(int argc,char* argv[])
     do
     {
         cout << "1- Insert\n2- Delete\n3- Clear\n4- Exit\n\n";
-        cout <<"Enter your choice: ";
+        cout <<"Enter the number of your choice: ";
         cin >> choice;
         switch(choice)
         {
