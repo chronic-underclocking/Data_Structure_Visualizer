@@ -8,11 +8,12 @@ One is for choosing the data structure to visualize, and the other window will l
 Currently, only the red black tree has been implemented.
  
  **Dependencies:**
-  *Add both python and the g++ compiler to system path.
+ 
+  * Add both python and the g++ compiler to system path.
   
-  *Must be Python 3 (3.9 is tested).
+  * Must be Python 3 (3.9 is tested).
   
-  *GraphViz library for python is required, install it using:
+  * GraphViz library for python is required, install it using:
   
       pip install graphviz
   
