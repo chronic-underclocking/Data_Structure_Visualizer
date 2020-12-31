@@ -9,7 +9,7 @@ Currently, only the red black tree has been implemented.
  
  **Dependencies:**
  
-  * Add both python and the g++ compiler to system path.
+  * Add both python and the g++ compiler to your system path.
   
   * Must be Python 3 (3.9 is tested).
   
