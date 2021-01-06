@@ -3,8 +3,6 @@
 #include <vector>
 #include <fstream>
 
-using namespace std;
-
 enum Color {RED, BLACK};
 
 struct Node
@@ -439,7 +437,7 @@ public:
     {
         //printTree("", root, false);
         generateDot();
-        string command = "python dataStructures\\dot.py rbtree.dot";
+        std::string command = "python dataStructures\\dot.py rbtree.dot";
         system(command.c_str());
     }
 
@@ -462,20 +460,20 @@ int main(int argc,char* argv[])
     int num;
     do
     {
-        cout << "1- Insert\n2- Delete\n3- Clear\n4- Exit\n\n";
-        cout <<"Enter the number of your choice: ";
-        cin >> choice;
+        std::cout << "1- Insert\n2- Delete\n3- Clear\n4- Exit\n\n";
+        std::cout <<"Enter the number of your choice: ";
+        std::cin >> choice;
         switch(choice)
         {
             case 1:
-                cout << "Enter number to insert: ";
-                cin >> num;
+                std::cout << "Enter number to insert: ";
+                std::cin >> num;
                 tree.Insert(num);
                 tree.Print();
                 break;
             case 2:
-                cout << "Enter number to delete: ";
-                cin >> num;
+                std::cout << "Enter number to delete: ";
+                std::cin >> num;
                 tree.Delete(num);
                 tree.Print();
                 break;
