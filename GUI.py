@@ -4,7 +4,7 @@ from tkinter import *
 
 
 def compileStructures():
-    cmd = "g++ dataStructures\\RedBlackTree.cpp -o RedBlackTree.exe"
+    cmd = "g++ dataStructures/RedBlackTree.cpp -o RedBlackTree.exe"
     subprocess.run(cmd)
 
 def rbtree():
@@ -23,8 +23,6 @@ def btnClickFunction():
     if choice == 1:
         rbtree()
 
-compileStructures()
-    
 root = Tk()
 
 rbVariable = tk.IntVar()
@@ -39,13 +37,18 @@ Label(root, text='Choose a data structure:', bg='#8B7355', font=('courier', 22, 
 frame=Frame(root, width=0, height=0, bg='#C1CDCD')
 frame.place(x=27, y=80)
 ARBEES=[
-('Red Black Tree', 1), 
-]
+    ('Red Black Tree', 1), 
+    ]
 for text, mode in ARBEES:
-        rbGroupOne=Radiobutton(frame, text=text, variable=rbVariable, value=mode, bg='#8B7355', font=('courier', 15, 'bold')).pack(side='top', anchor = 'w')
+    rbGroupOne=Radiobutton(frame, text=text, variable=rbVariable, value=mode, bg='#8B7355', font=('courier', 15, 'bold')).pack(side='top', anchor = 'w')
 
 Button(root, text='Begin!', bg='#C1CDCD', font=('courier', 18, 'bold'), command=btnClickFunction).place(x=370, y=396)
 
-root.mainloop()
+def main():
+    compileStructures()
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
 
 

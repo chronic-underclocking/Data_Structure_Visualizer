@@ -141,7 +141,7 @@ private:
 
     void generateDot()
     {
-        std::ofstream dotFile("dotFiles\\rbtree.dot");
+        std::ofstream dotFile("dotFiles/rbtree.dot");
         dotFile << "strict graph G {\n"
                 << "graph [ dpi = 500 ];\n"
                 << "node [style = filled, fontcolor = white];\n";
@@ -437,7 +437,7 @@ public:
     {
         //printTree("", root, false);
         generateDot();
-        std::string command = "python dataStructures\\dot.py rbtree.dot";
+        std::string command = "python dataStructures/dot.py rbtree.dot";
         system(command.c_str());
     }
 
