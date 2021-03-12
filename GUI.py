@@ -4,12 +4,12 @@ from tkinter import *
 
 
 def compileStructures():
-    cmd = "g++ dataStructures/RedBlackTree.cpp -o RedBlackTree.exe"
+    cmd = "g++ dataStructures/RedBlackTree.cpp -o RedBlackTree"
     subprocess.run(cmd)
 
 def rbtree():
     print
-    subprocess.run('RedBlackTree.exe')
+    subprocess.run('RedBlackTree')
     print
 
 
